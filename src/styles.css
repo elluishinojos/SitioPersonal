@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+#contact_button {
+  border-radius: 50%;
+  background: #F8931F;
+  color: white;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  top: 80vh;
+  right: 10px;
+  z-index: 80;
+  text-align: center;
+}
+
+.fa-positioning{
+  margin-top: 15px;
+  font-size: 1.8em;
+}
+
+footer {
+  background: red;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+#home {
+  background: lightblue;
+  height: 750px;
+}
+#home-content {
+  display: inline;
+  position: relative;
+  top: 30vh;
+}
+
+#skills {
+  background: lightcoral;
+  height: fit-content;
+}
+
+.skills-img {
+  width: fit-content;
+}
+
+.skills-img img {
+  width: 100%;
+}
+
+#experience {
+  background: lightgreen;
+  height: fit-content;
+}
+
+.experience-img {
+  width: fit-content;
+}
+
+.experience-img img {
+  width: 100%;
+}
