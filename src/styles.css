@@ -286,18 +286,18 @@ footer .fa-github:hover{
 #skills #nav-tabContent {
   background: #fff;
   width: fit-content;
-  padding: 0 15px;
+  padding: 0 15px 10px 15px ;
   border-radius: 0 5%
 }
 
 #skills figure{
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   margin: 10px auto 0 auto;
   border-radius: 50%;
 }
 #skills figure img{
-  height: 85px;
+  height: 80px;
 }
 #skills p {
   font-size: 1.15em;
@@ -308,16 +308,32 @@ footer .fa-github:hover{
   height: fit-content;
   padding-bottom: 15pt;
 }
-#experience h3 {
+
+#experience #tituloDiv {
+  height: fit-content;
+  width: 100%;
+  margin-top: 15pt;
+}
+
+#experience #tituloDiv h3 {
+  padding: 10px 0 10px  5px;
   color: #0043BD;
   text-shadow:    1px 1px 0 #000;
 }
 
 #experience .placeExp {
   font-size: 1.8em;
-  margin: 0 -15px;
   color: #fff;
   background: #0043BD;
+}
+
+#experience .placeExpDiv {
+  height: fit-content;
+  width: 100%;
+  box-shadow: 1px 1px 0 #0043BD,
+              2px 2px 0 #003494,
+              3px 3px 0 #002A76,
+              4px 4px 0 #001F56;
 }
 
 #experience .tituloExp {
@@ -332,6 +348,47 @@ footer .fa-github:hover{
 
 #experience .experience-img img {
   width: 100%;
-  padding-left: auto;
-  padding-right: auto;
+  margin: 0 10%;
 }
+
+#sobre-mi #info-personal {
+  position: relative;
+  width: 100%;
+}
+
+#sobre-mi #info-personal figure {
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+}
+#sobre-mi #info-personal figure img{
+  width: 100%;
+  border-radius: 50%;
+  padding: 3px;
+  border: 5px solid #0043BD;
+}
+#sobre-mi p {
+  font-size: 1.25em;
+}
+
+#sobre-mi #educacion {
+  position: relative;
+  width: 100%;
+}
+#sobre-mi #educacion figure{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+#sobre-mi #educacion figure img{
+  width: 100%;
+}
+
+#sobre-mi #hobbies .card {
+  margin-bottom: 12pt;
+}
+
+@media screen and (min-width: 480px){}
+@media screen and (min-width: 600px){}
+@media screen and (min-width: 767px){}
+@media screen and (min-width: 950px){}
