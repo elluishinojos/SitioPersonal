@@ -1,1 +1,337 @@
 /* You can add global styles to this file, and also import other style files */
+.color-primary-0 {  color: #003494}/* Main Primary color */
+.color-primary-1 {  color: #055CFB}
+.color-primary-2 {  color: #0043BD}
+.color-primary-3 {  color: #002A76}
+.color-primary-4 {  color: #001F56}
+.color-secondary-1-0 {  color: #1E009A}/* Main Secondary color (1) */
+.color-secondary-1-1 {  color: #3606FC}
+.color-secondary-1-2 {  color: #2600C2}
+.color-secondary-1-3 {  color: #18007B}
+.color-secondary-1-4 {  color: #12005A}
+.color-secondary-2-0 {  color: #008A7C}/* Main Secondary color (2) */
+.color-secondary-2-1 {  color: #00FBE0}
+.color-secondary-2-2 {  color: #00B5A2}
+.color-secondary-2-3 {  color: #006F63}
+.color-secondary-2-4 {  color: #005148}
+.color-complement-0 {  color: #DF9100}/* Main Complement color */
+.color-complement-1 {  color: #FFA500}
+.color-complement-2 {  color: #FFA500}
+.color-complement-3 {  color: #B27400}
+.color-complement-4 {  color: #825400}
+
+.bg-primary-0 {  background-color: #003494}/* Main Primary color */
+.bg-primary-1 {  background-color: #055CFB}
+.bg-primary-2 {  background-color: #0043BD}
+.bg-primary-3 {  background-color: #002A76}
+.bg-primary-4 {  background-color: #001F56}
+.bg-secondary-1-0 {  background-color: #1E009A}/* Main Secondary color (1) */
+.bg-secondary-1-1 {  background-color: #3606FC}
+.bg-secondary-1-2 {  background-color: #2600C2}
+.bg-secondary-1-3 {  background-color: #18007B}
+.bg-secondary-1-4 {  background-color: #12005A}
+.bg-secondary-2-0 {  background-color: #008A7C}/* Main Secondary color (2) */
+.bg-secondary-2-1 {  background-color: #00FBE0}
+.bg-secondary-2-2 {  background-color: #00B5A2}
+.bg-secondary-2-3 {  background-color: #006F63}
+.bg-secondary-2-4 {  background-color: #005148}
+.bg-complement-0 {  background-color: #DF9100}/* Main Complement color */
+.bg-complement-1 {  background-color: #FFA500}
+.bg-complement-2 {  background-color: #FFA500}
+.bg-complement-3 {  background-color: #B27400}
+.bg-complement-4 {  background-color: #825400}
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Merriweather', serif;
+  text-shadow:    1px 1px 0px #fff,
+                    2px 2px 0px #fff;
+}
+
+h3 {
+  padding-top: 15pt;
+  padding-left: 15pt;
+}
+
+a {
+  color: #fff;
+}
+
+#contact_button {
+  border-radius: 50%;
+  background: #FFA500;
+  color: white;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  top: 75vh;
+  right: 10px;
+  z-index: 80;
+  text-align: center;
+  cursor: pointer;
+}
+
+.fa-positioning {
+  margin-top: 15px;
+  font-size: 1.8em;
+}
+
+nav a.navbar-brand img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 12pt
+}
+
+footer {
+  background: #212529;
+  color: #fff;
+  padding: 20pt 0;
+}
+
+footer p {
+  margin-bottom: 0;
+  font-size: 0.75em;
+}
+footer p:first-of-type {
+  font-size: 1.0em;
+}
+
+footer #social-icons i {
+  font-size: 3.5em;
+  letter-spacing: 30pt;
+  padding: 15pt 0;
+}
+footer #social-icons i:nth-last-child(1) {
+  letter-spacing: 0;
+}
+
+footer .fa-facebook:hover{
+  color: #3b5998;
+}
+
+footer .fa-linkedin:hover{
+  color: #0e76a8;
+}
+
+footer .fa-github:hover{
+  color: #999b9c;
+}
+
+
+#home {
+  height: 750px;
+  position: relative;
+}
+
+#home-content {
+  display: inline;
+  position: relative;
+  top: 25vh;
+}
+
+#home-content h1{
+  font-size: 2.75em
+}
+#home-content h2{
+  font-size: 1.75em
+}
+#home-content h1, #home-content h2{
+  box-shadow: #fff;
+}
+
+#home-content button {
+  font-size: 1.5em;
+}
+
+.bg-home #img-top{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80%
+}
+
+.bg-home #img-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  transform: rotate(180deg);
+}
+
+.btn {
+  margin-right: auto;
+  margin-left: auto;
+  width: 75%;
+}
+
+/*Custom main buttons*/
+.btn-main {
+  color: #fff;
+  background-color: #003494;/*0*/
+  border-color: #003494/*0*/
+}
+
+.btn-main:hover {
+  color: #fff;
+  background-color: #0043BD;/*-0.5*/
+  border-color: #002A76/*-1*/
+
+}
+
+.btn-main.focus,
+.btn-main:focus {
+  box-shadow: 0 0 0 .2rem rgba(130, 84,  0, .5)
+}
+
+.btn-main.disabled,
+.btn-main:disabled {
+  color: #fff;
+  background-color: #003494;/*0*/
+  border-color: #003494/*0*/
+}
+
+.btn-main:not(:disabled):not(.disabled).active,
+.btn-main:not(:disabled):not(.disabled):active,
+.show>.btn-main.dropdown-toggle {
+  color: #fff;
+  background-color: #002A76;/*-1*/
+  border-color: #001F56/*-2*/
+}
+
+.btn-main:not(:disabled):not(.disabled).active:focus,
+.btn-main:not(:disabled):not(.disabled):active:focus,
+.show>.btn-main.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem rgba(130, 84,  0, .5)
+}
+
+/*Custom alt buttons*/
+.btn-alt {
+  color: #212529;
+  background-color: #FFA500;/*0*/
+  border-color: #FFA500/*0*/
+}
+
+.btn-alt:hover {
+  color: #212529;
+  background-color: #DF9100;/*-0.5*/
+  border-color: #DF9100/*-1*/
+
+}
+
+.btn-alt.focus,
+.btn-alt:focus {
+  box-shadow: 0 0 0 .2rem rgba(130, 84,  0, .5)
+}
+
+.btn-alt.disabled,
+.btn-alt:disabled {
+  color: #212529;
+  background-color: #FFA500;/*0*/
+  border-color: #FFA500/*0*/
+}
+
+.btn-alt:not(:disabled):not(.disabled).active,
+.btn-alt:not(:disabled):not(.disabled):active,
+.show>.btn-alt.dropdown-toggle {
+  color: #212529;
+  background-color: #DF9100;/*-1*/
+  border-color: #B27400/*-2*/
+}
+
+.btn-alt:not(:disabled):not(.disabled).active:focus,
+.btn-alt:not(:disabled):not(.disabled):active:focus,
+.show>.btn-alt.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem rgba(130, 84,  0, .5)
+}
+
+#skills {
+  padding-bottom: 10pt;
+  background: #0043BD;
+  background-image: url(assets/whitepattern.png)
+}
+#skills .col-4 ,
+#skills .col-sm-6 ,
+#skills .col-md-4 ,
+#skills .col-lg-3{
+  padding: 0;
+}
+
+#skills h3 {
+  color: #fff;
+  text-shadow:    1px 1px 0px #000;
+}
+
+#skills nav a{
+  font-size: 1.25em;
+}
+
+.skills-img {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills-img img {
+  width: 100%;
+}
+
+#skills #nav-tabContent {
+  background: #fff;
+  width: fit-content;
+  padding: 0 15px;
+  border-radius: 0 5%
+}
+
+#skills figure{
+  height: 120px;
+  width: 120px;
+  margin: 10px auto 0 auto;
+  border-radius: 50%;
+}
+#skills figure img{
+  height: 85px;
+}
+#skills p {
+  font-size: 1.15em;
+  text-align: center;
+}
+
+#experience {
+  height: fit-content;
+  padding-bottom: 15pt;
+}
+#experience h3 {
+  color: #0043BD;
+  text-shadow:    1px 1px 0 #000;
+}
+
+#experience .placeExp {
+  font-size: 1.8em;
+  margin: 0 -15px;
+  color: #fff;
+  background: #0043BD;
+}
+
+#experience .tituloExp {
+  font-size: 1.5em;
+  padding: 0;
+  padding-top: 15pt;
+}
+
+#experience .experience-img {
+  width: 100%;
+}
+
+#experience .experience-img img {
+  width: 100%;
+  padding-left: auto;
+  padding-right: auto;
+}
