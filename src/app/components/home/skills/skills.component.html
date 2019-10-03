@@ -16,86 +16,38 @@
     <div class="tab-content mt-2" id="nav-tabContent">
       <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
         <div class="row">
-          <div class="col-4 col-sm-6 col-md-4 col-lg-3">
-            <figure class="skills-img">
-              <img src="assets/icons/bootstrap.svg" alt="">
-              <p>Bootstrap</p>
-            </figure>
-          </div>
-          <div class="col-4 col-sm-6 col-md-4 col-lg-3">
-            <figure class="skills-img">
-              <img src="assets/icons/bootstrap.svg" alt="">
-              <p>Bootstrap</p>
-            </figure>
-          </div>
-          <div class="col-4 col-sm-6 col-md-4 col-lg-3">
-            <figure class="skills-img">
-              <img src="assets/icons/bootstrap.svg" alt="">
-              <p>Bootstrap</p>
-            </figure>
-          </div>
-          <div class="col-4 col-sm-6 col-md-4 col-lg-3">
-            <figure class="skills-img">
-              <img src="assets/icons/bootstrap.svg" alt="">
-              <p>Bootstrap</p>
-            </figure>
+          <div class="animated fadeIn col-4 col-sm-6 col-md-4 col-lg-3" *ngFor="let skill of consService.advancedSkills">
+            <a [href]="skill.link" target="_blank">
+              <figure class="skills-img">
+                <img [src]="skill.img" alt="">
+                <p>{{skill.nombre}}</p>
+              </figure>
+            </a>
           </div>
         </div>
       </div>
       <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
         <div class="row">
-          <div class="col-4 col-sm-6 col-md-4 col-lg-3">
-            <figure class="skills-img">
-              <img src="assets/icons/ionic.svg" alt="">
-              <p>Ionic 3</p>
-            </figure>
-          </div>
-          <div class="col-4 col-sm-6 col-md-4 col-lg-3">
-            <figure class="skills-img">
-              <img src="assets/icons/ionic.svg" alt="">
-              <p>Ionic 3</p>
-            </figure>
-          </div>
-          <div class="col-4 col-sm-6 col-md-4 col-lg-3">
-            <figure class="skills-img">
-              <img src="assets/icons/ionic.svg" alt="">
-              <p>Ionic 3</p>
-            </figure>
-          </div>
-          <div class="col-4 col-sm-6 col-md-4 col-lg-3">
-            <figure class="skills-img">
-              <img src="assets/icons/ionic.svg" alt="">
-              <p>Ionic 3</p>
-            </figure>
-          </div>
+            <div class="animated fadeIn col-4 col-sm-6 col-md-4 col-lg-3" *ngFor="let skill of consService.mediumkills">
+              <a [href]="skill.link" target="_blank">
+                <figure class="skills-img">
+                  <img [src]="skill.img" alt="">
+                  <p>{{skill.nombre}}</p>
+                </figure>
+              </a>
+            </div>
         </div>
       </div>
       <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
         <div class="row">
-          <div class="col-4 col-sm-6 col-md-4 col-lg-3">
-            <figure class="skills-img">
-              <img src="assets/icons/angular.svg" alt="">
-              <p>Angular</p>
-            </figure>
-          </div>
-          <div class="col-4 col-sm-6 col-md-4 col-lg-3">
-            <figure class="skills-img">
-              <img src="assets/icons/angular.svg" alt="">
-              <p>Angular</p>
-            </figure>
-          </div>
-          <div class="col-4 col-sm-6 col-md-4 col-lg-3">
-            <figure class="skills-img">
-              <img src="assets/icons/angular.svg" alt="">
-              <p>Angular</p>
-            </figure>
-          </div>
-          <div class="col-4 col-sm-6 col-md-4 col-lg-3">
-            <figure class="skills-img">
-              <img src="assets/icons/angular.svg" alt="">
-              <p>Angular</p>
-            </figure>
-          </div>
+            <div class="animated fadeIn col-4 col-sm-6 col-md-4 col-lg-3" *ngFor="let skill of consService.basicSkills">
+              <a [href]="skill.link" target="_blank">
+                <figure class="skills-img">
+                  <img [src]="skill.img" alt="">
+                  <p>{{skill.nombre}}</p>
+                </figure>
+              </a>
+            </div>
         </div>
       </div>
     </div>

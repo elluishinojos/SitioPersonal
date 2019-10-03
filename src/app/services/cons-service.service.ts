@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class ConsServiceService {
 
-  private advancedSkills: any[] = [
+  public advancedSkills: any[] = [
     {
       nombre: 'Angular',
       img: 'assets/icons/angular.svg',
@@ -42,7 +42,7 @@ export class ConsServiceService {
       link: 'http://www.typescriptlang.org'
     }
   ];
-  private mediumkills: any[] = [
+  public mediumkills: any[] = [
     {
       nombre: 'Android',
       img: 'assets/icons/android.svg',
@@ -52,11 +52,6 @@ export class ConsServiceService {
       nombre: 'Bitbucket',
       img: 'assets/icons/bitbucket.svg',
       link: 'https://bitbucket.org'
-    },
-    {
-      nombre: 'Express',
-      img: 'assets/icons/express.svg',
-      link: 'http://expressjs.com'
     },
     {
       nombre: 'Firebase',
@@ -114,12 +109,17 @@ export class ConsServiceService {
       link: 'https://www.getpostman.com'
     },
     {
+      nombre: 'SQLite',
+      img: 'assets/icons/sqlite.svg',
+      link: 'https://www.sqlite.org/index.html'
+    },
+    {
       nombre: 'SQLServer',
       img: 'assets/icons/sqlserver.svg',
       link: 'https://www.microsoft.com/es-mx/sql-server/sql-server-downloads'
     }
   ];
-  private basicSkills: any[] = [
+  public basicSkills: any[] = [
     {
       nombre: 'ASP.NET',
       img: 'assets/icons/aspnet.svg',

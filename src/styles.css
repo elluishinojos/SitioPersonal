@@ -270,18 +270,26 @@ footer .fa-github:hover{
   text-shadow:    1px 1px 0px #000;
 }
 
+#skills a p {
+  text-decoration: none;
+  color: #000;
+}
+
 #skills nav a{
   font-size: 1.25em;
 }
 
 .skills-img {
-  width: fit-content;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 120px;
 }
 
 .skills-img img {
-  width: 100%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 #skills #nav-tabContent {
@@ -323,19 +331,34 @@ footer .fa-github:hover{
 }
 
 
-#experience .tituloExp {
+#experience .tituloExp,
+#experience .subtituloExp {
   font-size: 1.5em;
   padding: 0;
+  margin: 0;
+}
+#experience .tituloExp {
   padding-top: 15pt;
 }
-
-#experience .experience-img {
+#experience .subtituloExp {
+  margin-bottom: 12pt;
+}
+#experience .descripcionExp p,
+#experience .descripcionExp li {
+  font-size: 16px;
+}
+#experience figure {
+  position: relative;
   width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #999b9c;
 }
 
-#experience .experience-img img {
+#experience figure img {
   width: 100%;
-  margin: 0 10%;
+  height: 100%;
+  object-fit: contain;
 }
 
 #sobre-mi #info-personal {
@@ -412,3 +435,33 @@ footer .fa-github:hover{
 @media screen and (min-width: 600px){}
 @media screen and (min-width: 767px){}
 @media screen and (min-width: 950px){}
+
+
+/* Animaciones */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
