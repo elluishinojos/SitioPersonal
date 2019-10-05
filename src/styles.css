@@ -48,7 +48,6 @@ body {
 h1,
 h2,
 h3,
-h4,
 h5 {
   font-family: 'Merriweather', serif;
   text-shadow:    1px 1px 0px #fff,
@@ -87,7 +86,8 @@ nav a.navbar-brand img{
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  margin-right: 12pt
+  margin-right: 12pt;
+  border: 1px solid #fff;
 }
 
 footer {
@@ -110,7 +110,8 @@ footer #social-icons i {
   padding: 15pt 0;
   text-shadow: 0 3px 5px rgba(0,0,0,.25);
 }
-footer #social-icons i:nth-last-child(1) {
+
+footer #social-icons .fa-github {
   letter-spacing: 0;
 }
 
@@ -379,9 +380,6 @@ footer .fa-github:hover{
   box-shadow: 0 3px 5px rgba(0,0,0,.5);
 
 }
-#sobre-mi p {
-  font-size: 1.25em;
-}
 
 #sobre-mi #educacion {
   position: relative;
@@ -410,6 +408,7 @@ footer .fa-github:hover{
   font-size: 1.98em;
 }
 .h3-title, #sobre-mi h3 {
+  font-size: 2.0em;
   background-color: #0043BD;
   color: #fff;
   text-shadow: 1px 1px 0 #000;
