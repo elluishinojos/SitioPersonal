@@ -145,4 +145,8 @@ export class ConsServiceService {
   constructor() {
     console.log('servicio funcionando');
   }
+
+  enviarCorreo(message: string) {
+    console.log('Mail Method activated from: ' + message);
+  }
 }

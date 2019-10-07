@@ -1,3 +1,4 @@
+import { ConsServiceService } from './../../../services/cons-service.service';
 import { Component } from '@angular/core';
 
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
@@ -11,23 +12,16 @@ export class NavbarComponent {
   closeResult: string;
   condition: boolean;
 
-  constructor(private modalService: NgbModal) { }
+  constructor(
+    private modalService: NgbModal,
+    private consService: ConsServiceService
+  ) { }
 
   open(content: any) {
-    this.modalService.open(content, { centered: true }).result.then((result) => {
-      this.closeResult = `Closed with: ${result}`;
-    }, (reason) => {
-      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
-    });
+    this.modalService.open(content, { centered: true });
   }
 
-  private getDismissReason(reason: any): string {
-    if (reason === ModalDismissReasons.ESC) {
-      return 'by pressing ESC';
-    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
-      return 'by clicking on a backdrop';
-    } else {
-      return `with: ${reason}`;
-    }
+  contactMe() {
+    this.consService.enviarCorreo('activado desde navbar');
   }
 }

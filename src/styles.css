@@ -19,6 +19,7 @@
 .color-complement-2 {  color: #FFA500}
 .color-complement-3 {  color: #B27400}
 .color-complement-4 {  color: #825400}
+.color-white {  color: #fff!important}
 
 .bg-primary-0 {  background-color: #003494}/* Main Primary color */
 .bg-primary-1 {  background-color: #055CFB}
@@ -78,6 +79,21 @@ a {
   z-index: 80;
   text-align: center;
   cursor: pointer;
+}
+
+.modal-footer button p {
+  margin-bottom: 0!important;
+}
+
+.modal-footer button .fas {
+  font-size: 1.5em!important;
+}
+
+.modal-body {
+  padding: 16px 8px;
+}
+.form-group {
+  margin-bottom: 8px;
 }
 
 .fa-positioning {
