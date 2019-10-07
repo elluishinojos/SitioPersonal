@@ -348,18 +348,24 @@ footer .fa-github:hover{
 #experience .descripcionExp li {
   font-size: 16px;
 }
-#experience figure {
+#experience figure,
+#sobre-mi #educacion figure {
   position: relative;
   width: 100%;
   height: 300px;
   margin: 0 auto;
   background-color: #999b9c;
+  background-color: #001F56;
 }
 
-#experience figure img {
-  width: 100%;
+#experience figure img,
+#sobre-mi #educacion figure img {
   height: 100%;
   object-fit: contain;
+}
+#sobre-mi #educacion div p {
+  font-size: 1.05em;
+  text-shadow: -1px -1px 0 #000;
 }
 
 #sobre-mi #info-personal {
@@ -381,21 +387,39 @@ footer .fa-github:hover{
 
 }
 
-#sobre-mi #educacion {
+#sobre-mi .carousel-caption{
+  padding-bottom: 5px;
+}
+
+#sobre-mi #hobbies  {
   position: relative;
   width: 100%;
 }
-#sobre-mi #educacion figure{
-  width: 80%;
+#sobre-mi #hobbies figure {
+  width: 90%;
   margin-right: auto;
   margin-left: auto;
 }
-#sobre-mi #educacion figure img{
+
+#sobre-mi #hobbies figure img {
   width: 100%;
 }
 
-#sobre-mi #hobbies .card {
-  margin-bottom: 12pt;
+#sobre-mi #hobbies #nintendo {
+  height: 150px;
+  padding: 0;
+  background-image: url(assets/about-me/nintendo.png);
+  background-size: auto 100%;
+  animation: 300s infiniteScroll linear infinite;
+}
+
+#sobre-mi #hobbies figcaption {
+  text-align: center;
+  color: #000!important;
+}
+
+#sobre-mi #hobbies a {
+  text-decoration: none;
 }
 
 #about-site {
@@ -446,21 +470,32 @@ footer .fa-github:hover{
 }
 
 .fast {
-    -webkit-animation-duration: 0.4s;
-    animation-duration: 0.4s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
 }
 
 .fadeIn {
-    animation-name: fadeIn;
+  animation-name: fadeIn;
 }
+
+@keyframes infiniteScroll {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -10000px 0;
+  }
+}
+
+
