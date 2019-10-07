@@ -413,7 +413,8 @@ footer .fa-github:hover{
   animation: 300s infiniteScroll linear infinite;
 }
 
-#sobre-mi #hobbies figcaption {
+#sobre-mi #hobbies figcaption,
+#sobre-mi #hobbies a {
   text-align: center;
   color: #000!important;
 }
