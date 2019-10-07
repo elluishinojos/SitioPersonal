@@ -62,6 +62,9 @@ h3 {
 a {
   color: #fff;
 }
+.cursor-pointer {
+  cursor: pointer;
+}
 
 #contact_button {
   border-radius: 50%;
