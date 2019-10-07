@@ -19,9 +19,35 @@
       <li class="nav-item" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show">
         <a class="nav-link" [routerLink]="['about-site']" >Acerca de este sitio</a>
       </li>
-      <li class="nav-item cursor-pointer" (click)="openModal()">
+      <li class="nav-item cursor-pointer" (click)="open(content)" data-toggle="collapse" data-target=".navbar-collapse.show">
         <a class="nav-link">Contáctame</a>
       </li>
     </ul>
   </div>
 </nav>
+
+<div id="contact_button" (click)="open(content)">
+    <i class="fas fa-envelope fa-positioning"></i>
+</div>
+
+<ng-template #content let-modal class="animated fadeIn">
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group">
+          <label for="dateOfBirth">Date of birth</label>
+          <div class="input-group">
+            <h2>Soy el input</h2>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+    </div>
+  </ng-template>
