@@ -11,6 +11,8 @@ import { AboutSiteComponent } from './components/about-site/about-site.component
 import { SkillsComponent } from './components/home/skills/skills.component';
 import { ExperienceComponent } from './components/home/experience/experience.component';
 import { LandingPageComponent } from './components/home/landing-page/landing-page.component';
+import { ModalComponent } from './components/shared/modal/modal.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { LandingPageComponent } from './components/home/landing-page/landing-pag
     AboutSiteComponent,
     SkillsComponent,
     ExperienceComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
