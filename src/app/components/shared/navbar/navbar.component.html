@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary-0 sticky-top">
-  <a class="navbar-brand"  [routerLink]="['home']">
-      <img src="assets/me.jpg" class="d-inline-block align-top" alt="">
+  <a class="navbar-brand" [routerLink]="['home']">
+    <img src="assets/me.jpg" class="d-inline-block align-top" alt="">
     Luis Hinojos
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -11,15 +11,16 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show">
-        <a class="nav-link" [routerLink]="['home']" >Página principal</a>
+        <a class="nav-link" [routerLink]="['home']">Página principal</a>
       </li>
       <li class="nav-item" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show">
-        <a class="nav-link" [routerLink]="['about-me']" >Sobre mí</a>
+        <a class="nav-link" [routerLink]="['about-me']">Sobre mí</a>
       </li>
       <li class="nav-item" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show">
-        <a class="nav-link" [routerLink]="['about-site']" >Acerca de este sitio</a>
+        <a class="nav-link" [routerLink]="['about-site']">Acerca de este sitio</a>
       </li>
-      <li class="nav-item cursor-pointer" (click)="open(content)" data-toggle="collapse" data-target=".navbar-collapse.show">
+      <li class="nav-item cursor-pointer" (click)="open(content)" data-toggle="collapse"
+        data-target=".navbar-collapse.show">
         <a class="nav-link">Contáctame</a>
       </li>
     </ul>
@@ -27,27 +28,27 @@
 </nav>
 
 <div id="contact_button" (click)="open(content)">
-    <i class="fas fa-envelope fa-positioning"></i>
+  <i class="fas fa-envelope fa-positioning"></i>
 </div>
 
-<ng-template #content let-modal class="animated fadeIn">
-    <div class="modal-header">
-      <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
-      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body">
-      <form>
-        <div class="form-group">
-          <label for="dateOfBirth">Date of birth</label>
-          <div class="input-group">
-            <h2>Soy el input</h2>
-          </div>
+<ng-template #content let-modal>
+  <div class="modal-header animated fadeIn">
+    <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body animated fadeIn">
+    <form>
+      <div class="form-group">
+        <label for="dateOfBirth">Date of birth</label>
+        <div class="input-group">
+          <h2>Soy el input</h2>
         </div>
-      </form>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
-    </div>
-  </ng-template>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer animated fadeIn">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+  </div>
+</ng-template>
