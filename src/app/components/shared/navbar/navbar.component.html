@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary-0 sticky-top">
-  <a class="navbar-brand"  [routerLink]="['home']">
-      <img src="assets/me.jpg" class="d-inline-block align-top" alt="">
+  <a class="navbar-brand" [routerLink]="['home']">
+    <img src="assets/me.jpg" class="d-inline-block align-top" alt="">
     Luis Hinojos
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -11,17 +11,65 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show">
-        <a class="nav-link" [routerLink]="['home']" >Página principal</a>
+        <a class="nav-link" [routerLink]="['home']">Página principal</a>
       </li>
       <li class="nav-item" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show">
-        <a class="nav-link" [routerLink]="['about-me']" >Sobre mí</a>
+        <a class="nav-link" [routerLink]="['about-me']">Sobre mí</a>
       </li>
       <li class="nav-item" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show">
-        <a class="nav-link" [routerLink]="['about-site']" >Acerca de este sitio</a>
+        <a class="nav-link" [routerLink]="['about-site']">Acerca de este sitio</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item cursor-pointer" (click)="open(content)" data-toggle="collapse"
+        data-target=".navbar-collapse.show">
         <a class="nav-link">Contáctame</a>
       </li>
     </ul>
   </div>
 </nav>
+
+<div id="contact_button" (click)="open(content)">
+  <i class="fas fa-envelope fa-positioning"></i>
+</div>
+
+<ng-template #content let-modal>
+  <div class="modal-header bg-primary-2 animated fadeIn">
+    <h4 class="modal-title color-white" id="modal-basic-title">¡Manda un saludo! 😬</h4>
+    <button type="button" class="close color-white" aria-label="Close" (click)="modal.dismiss()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body animated fadeIn">
+    <form (ngSubmit)="contactMe(f)" #f="ngForm">
+      <div class="form-group">
+        <label>Correo de contacto</label>
+        <input type="email" class="form-control" placeholder="name@example.com" [(ngModel)]="mensaje.correo"
+          name="correo" required>
+      </div>
+      <div class="form-group">
+        <label>Nombre</label>
+        <input type="text" class="form-control" placeholder="Nombre" [(ngModel)]="mensaje.nombre" name="nombre"
+          required>
+      </div>
+      <div class="form-group">
+        <label for="subjectInput">Asunto</label>
+        <input type="text" class="form-control" placeholder="Asunto" [(ngModel)]="mensaje.asunto" name="asunto"
+          required>
+      </div>
+      <div class="form-group">
+        <label for="messageImput">Mensaje</label>
+        <textarea required [(ngModel)]="mensaje.cuerpo" name="cuerpo" class="form-control" id="messageImput" rows="2"
+          placeholder="Mensaje"></textarea>
+      </div>
+      <div class="modal-footer form-group animated fadeIn">
+        <button type="button" class="btn btn-outline-danger" (click)="modal.close()">
+          <i class="fas fa-ban"></i>
+          <p>Cancelar</p>
+        </button>
+        <button type="submit" class="btn btn-alt">
+          <i class="fas fa-paper-plane"></i>
+          <p>Enviar</p>
+        </button>
+      </div>
+    </form>
+  </div>
+</ng-template>
