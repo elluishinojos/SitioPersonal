@@ -1,7 +1,9 @@
+import { MensajeModel } from './../../../models/mensajes.model';
 import { ConsServiceService } from './../../../services/cons-service.service';
 import { Component } from '@angular/core';
 
-import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-navbar',
@@ -9,8 +11,7 @@ import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  closeResult: string;
-  condition: boolean;
+  mensaje = new MensajeModel();
 
   constructor(
     private modalService: NgbModal,
@@ -21,7 +22,14 @@ export class NavbarComponent {
     this.modalService.open(content, { centered: true });
   }
 
-  contactMe() {
-    this.consService.enviarCorreo('activado desde navbar');
+  contactMe(form: NgForm) {
+    if (form.invalid) {
+      return;
+    }
+    this.consService.enviarCorreo(this.mensaje)
+      .subscribe(resp => {
+        console.log(resp);
+      });
+    this.modalService.dismissAll();
   }
 }

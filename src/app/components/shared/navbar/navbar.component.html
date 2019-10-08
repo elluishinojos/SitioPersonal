@@ -39,33 +39,37 @@
     </button>
   </div>
   <div class="modal-body animated fadeIn">
-    <form>
+    <form (ngSubmit)="contactMe(f)" #f="ngForm">
       <div class="form-group">
-        <label for="emailInput">Correo de contacto</label>
-        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+        <label>Correo de contacto</label>
+        <input type="email" class="form-control" placeholder="name@example.com" [(ngModel)]="mensaje.correo"
+          name="correo" required>
       </div>
       <div class="form-group">
-        <label for="nameInput">Nombre</label>
-        <input type="email" class="form-control" id="nameInput" placeholder="Nombre">
+        <label>Nombre</label>
+        <input type="text" class="form-control" placeholder="Nombre" [(ngModel)]="mensaje.nombre" name="nombre"
+          required>
       </div>
       <div class="form-group">
         <label for="subjectInput">Asunto</label>
-        <input type="email" class="form-control" id="subjectInput" placeholder="Asunto">
+        <input type="text" class="form-control" placeholder="Asunto" [(ngModel)]="mensaje.asunto" name="asunto"
+          required>
       </div>
       <div class="form-group">
         <label for="messageImput">Mensaje</label>
-        <textarea class="form-control" id="messageImput" rows="2" placeholder="Mensaje"></textarea>
+        <textarea required [(ngModel)]="mensaje.cuerpo" name="cuerpo" class="form-control" id="messageImput" rows="2"
+          placeholder="Mensaje"></textarea>
+      </div>
+      <div class="modal-footer form-group animated fadeIn">
+        <button type="button" class="btn btn-outline-danger" (click)="modal.close()">
+          <i class="fas fa-ban"></i>
+          <p>Cancelar</p>
+        </button>
+        <button type="submit" class="btn btn-alt">
+          <i class="fas fa-paper-plane"></i>
+          <p>Enviar</p>
+        </button>
       </div>
     </form>
-  </div>
-  <div class="modal-footer animated fadeIn">
-    <button type="button" class="btn btn-outline-danger" (click)="modal.close()">
-      <i class="fas fa-ban"></i>
-      <p>Cancelar</p>
-    </button>
-    <button type="button" class="btn btn-alt" (click)="contactMe(); modal.close()">
-      <i class="fas fa-paper-plane"></i>
-      <p>Enviar</p>
-    </button>
   </div>
 </ng-template>

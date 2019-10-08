@@ -1,9 +1,14 @@
+import { MensajeModel } from './../models/mensajes.model';
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class ConsServiceService {
+
+  private url = 'https://sitio-personal-9dff0.firebaseio.com';
 
   public advancedSkills: any[] = [
     {
@@ -99,6 +104,11 @@ export class ConsServiceService {
       link: 'https://nodejs.org/en/'
     },
     {
+      nombre: 'Photoshop',
+      img: 'assets/icons/photoshop-cc.svg',
+      link: 'https://www.adobe.com/products/photoshop.html'
+    },
+    {
       nombre: 'phpMyAdmin',
       img: 'assets/icons/phpmyadmin.svg',
       link: 'https://www.phpmyadmin.net'
@@ -142,11 +152,9 @@ export class ConsServiceService {
     }
   ];
 
-  constructor() {
-    console.log('servicio funcionando');
-  }
+  constructor(private http: HttpClient) { }
 
-  enviarCorreo(message: string) {
-    console.log('Mail Method activated from: ' + message);
+  enviarCorreo(message: MensajeModel) {
+    return this.http.post(`${this.url}/mensajes.json`, message);
   }
 }
