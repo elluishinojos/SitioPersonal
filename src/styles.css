@@ -466,6 +466,11 @@ footer .fa-github:hover{
   margin-top: 15pt;
 }
 
+#about-site p a {
+  color: #0043BD;
+  font-weight: bold
+}
+
 #about-site figure{
   width: 80%;
   margin-right: auto;
@@ -473,6 +478,19 @@ footer .fa-github:hover{
 }
 #about-site figure img{
   width: 100%;
+}
+
+#about-site .colorRow {
+  padding: 0px 15px;
+}
+#about-site .colorDiv {
+  width: 20%;
+  height: 30px;
+  font-size: 0.75em;
+  text-align: center;
+  padding-top:5px;
+  border: 1px solid #fff;
+  box-shadow: 0 3px 5px rgba(0,0,0,.5);
 }
 
 @media screen and (min-width: 480px){}
