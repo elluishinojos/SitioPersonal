@@ -33,7 +33,7 @@ import { NgForm } from '@angular/forms';
       <div class="form-group">
         <label for="messageImput">Mensaje</label>
         <textarea required [(ngModel)]="mensaje.cuerpo" name="cuerpo" class="form-control" id="messageImput" rows="2"
-          placeholder="Mensaje"></textarea>
+          placeholder="¡Aquí deposita tus comentarios, quejas, sugerencias o saludos!"></textarea>
       </div>
       <div class="modal-footer form-group animated fadeIn">
         <button type="button" class="btn btn-outline-danger" (click)="modal.close()">
