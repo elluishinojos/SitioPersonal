@@ -1,1 +1,919 @@
 /* You can add global styles to this file, and also import other style files */
+.color-primary-0 {
+  color: #003494
+}
+
+/* Main Primary color */
+.color-primary-1 {
+  color: #055CFB
+}
+
+.color-primary-2 {
+  color: #0043BD
+}
+
+.color-primary-3 {
+  color: #002A76
+}
+
+.color-primary-4 {
+  color: #001F56
+}
+
+.color-secondary-1-0 {
+  color: #1E009A
+}
+
+/* Main Secondary color (1) */
+.color-secondary-1-1 {
+  color: #3606FC
+}
+
+.color-secondary-1-2 {
+  color: #2600C2
+}
+
+.color-secondary-1-3 {
+  color: #18007B
+}
+
+.color-secondary-1-4 {
+  color: #12005A
+}
+
+.color-secondary-2-0 {
+  color: #008A7C
+}
+
+/* Main Secondary color (2) */
+.color-secondary-2-1 {
+  color: #00FBE0
+}
+
+.color-secondary-2-2 {
+  color: #00B5A2
+}
+
+.color-secondary-2-3 {
+  color: #006F63
+}
+
+.color-secondary-2-4 {
+  color: #005148
+}
+
+.color-complement-0 {
+  color: #DF9100
+}
+
+/* Main Complement color */
+.color-complement-1 {
+  color: #FFA500
+}
+
+.color-complement-2 {
+  color: #FFA500
+}
+
+.color-complement-3 {
+  color: #B27400
+}
+
+.color-complement-4 {
+  color: #825400
+}
+
+.color-white {
+  color: #fff !important
+}
+
+.bg-primary-0 {
+  background-color: #003494
+}
+
+/* Main Primary color */
+.bg-primary-1 {
+  background-color: #055CFB
+}
+
+.bg-primary-2 {
+  background-color: #0043BD
+}
+
+.bg-primary-3 {
+  background-color: #002A76
+}
+
+.bg-primary-4 {
+  background-color: #001F56
+}
+
+.bg-secondary-1-0 {
+  background-color: #1E009A
+}
+
+/* Main Secondary color (1) */
+.bg-secondary-1-1 {
+  background-color: #3606FC
+}
+
+.bg-secondary-1-2 {
+  background-color: #2600C2
+}
+
+.bg-secondary-1-3 {
+  background-color: #18007B
+}
+
+.bg-secondary-1-4 {
+  background-color: #12005A
+}
+
+.bg-secondary-2-0 {
+  background-color: #008A7C
+}
+
+/* Main Secondary color (2) */
+.bg-secondary-2-1 {
+  background-color: #00FBE0
+}
+
+.bg-secondary-2-2 {
+  background-color: #00B5A2
+}
+
+.bg-secondary-2-3 {
+  background-color: #006F63
+}
+
+.bg-secondary-2-4 {
+  background-color: #005148
+}
+
+.bg-complement-0 {
+  background-color: #DF9100
+}
+
+/* Main Complement color */
+.bg-complement-1 {
+  background-color: #FFA500
+}
+
+.bg-complement-2 {
+  background-color: #FFA500
+}
+
+.bg-complement-3 {
+  background-color: #B27400
+}
+
+.bg-complement-4 {
+  background-color: #825400
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h5 {
+  font-family: 'Merriweather', serif;
+  text-shadow: 1px 1px 0px #fff,
+    2px 2px 0px #fff;
+}
+
+h3 {
+  padding-top: 15pt;
+  padding-left: 15pt;
+}
+
+a {
+  color: #fff;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+#contact_button {
+  border-radius: 50%;
+  background: #FFA500;
+  color: white;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  top: 75vh;
+  right: 10px;
+  z-index: 80;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+}
+
+.modal-footer button p {
+  margin-bottom: 0 !important;
+}
+
+.modal-footer button .fas {
+  font-size: 1.5em !important;
+}
+
+.modal-body {
+  padding: 16px 8px;
+}
+
+.form-group {
+  margin-bottom: 8px;
+}
+
+.fa-positioning {
+  margin-top: 15px;
+  font-size: 1.8em;
+}
+
+nav a.navbar-brand img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 12pt;
+  border: 1px solid #fff;
+}
+
+footer {
+  background: #444;
+  color: #fff;
+  padding: 20pt 0;
+}
+
+footer p {
+  margin-bottom: 0;
+  font-size: 0.75em;
+}
+
+footer p:first-of-type {
+  font-size: 1.0em;
+}
+
+footer #social-icons i {
+  font-size: 3.5em;
+  letter-spacing: 30pt;
+  padding: 15pt 0;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, .25);
+}
+
+footer #social-icons .fa-github {
+  letter-spacing: 0;
+}
+
+footer .fa-facebook:hover {
+  color: #3b5998;
+}
+
+footer .fa-linkedin:hover {
+  color: #0e76a8;
+}
+
+footer .fa-github:hover {
+  color: #999b9c;
+}
+
+
+#home {
+  height: 750px;
+  position: relative;
+}
+
+#home-content {
+  display: inline;
+  position: relative;
+  top: 25vh;
+}
+
+#home-content h1 {
+  font-size: 2.75em
+}
+
+#home-content h2 {
+  font-size: 1.75em
+}
+
+#home-content h1,
+#home-content h2 {
+  box-shadow: #fff;
+}
+
+#home-content a,
+#home-content button {
+  font-size: 1.5em;
+}
+
+.bg-home #img-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80%
+}
+
+.bg-home #img-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  transform: rotate(180deg);
+}
+
+.btn {
+  margin-right: auto;
+  margin-left: auto;
+  width: 75%;
+}
+
+/*Custom main buttons*/
+.btn-main {
+  color: #fff;
+  background-color: #003494;
+  /*0*/
+  border-color: #003494
+    /*0*/
+}
+
+.btn-main:hover {
+  color: #fff;
+  background-color: #0043BD;
+  /*-0.5*/
+  border-color: #002A76
+    /*-1*/
+
+}
+
+.btn-main.focus,
+.btn-main:focus {
+  box-shadow: 0 0 0 .2rem rgba(130, 84, 0, .5)
+}
+
+.btn-main.disabled,
+.btn-main:disabled {
+  color: #fff;
+  background-color: #003494;
+  /*0*/
+  border-color: #003494
+    /*0*/
+}
+
+.btn-main:not(:disabled):not(.disabled).active,
+.btn-main:not(:disabled):not(.disabled):active,
+.show>.btn-main.dropdown-toggle {
+  color: #fff;
+  background-color: #002A76;
+  /*-1*/
+  border-color: #001F56
+    /*-2*/
+}
+
+.btn-main:not(:disabled):not(.disabled).active:focus,
+.btn-main:not(:disabled):not(.disabled):active:focus,
+.show>.btn-main.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem rgba(130, 84, 0, .5)
+}
+
+/*Custom alt buttons*/
+.btn-alt {
+  color: #212529;
+  background-color: #FFA500;
+  /*0*/
+  border-color: #FFA500
+    /*0*/
+}
+
+.btn-alt:hover {
+  color: #212529;
+  background-color: #DF9100;
+  /*-0.5*/
+  border-color: #DF9100
+    /*-1*/
+
+}
+
+.btn-alt.focus,
+.btn-alt:focus {
+  box-shadow: 0 0 0 .2rem rgba(130, 84, 0, .5)
+}
+
+.btn-alt.disabled,
+.btn-alt:disabled {
+  color: #212529;
+  background-color: #FFA500;
+  /*0*/
+  border-color: #FFA500
+    /*0*/
+}
+
+.btn-alt:not(:disabled):not(.disabled).active,
+.btn-alt:not(:disabled):not(.disabled):active,
+.show>.btn-alt.dropdown-toggle {
+  color: #212529;
+  background-color: #DF9100;
+  /*-1*/
+  border-color: #B27400
+    /*-2*/
+}
+
+.btn-alt:not(:disabled):not(.disabled).active:focus,
+.btn-alt:not(:disabled):not(.disabled):active:focus,
+.show>.btn-alt.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem rgba(130, 84, 0, .5)
+}
+
+#skills {
+  padding-bottom: 10pt;
+  background: #0043BD;
+  background-image: url(assets/whitepattern.png);
+  animation: 300s infiniteScrollV linear infinite;
+}
+
+#skills .col-4,
+#skills .col-sm-6,
+#skills .col-md-4,
+#skills .col-lg-3 {
+  padding: 0;
+}
+
+#skills h3 {
+  color: #fff;
+  text-shadow: 1px 1px 0px #000;
+}
+
+#skills a p {
+  text-decoration: none;
+  color: #000;
+}
+
+#skills nav a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+#skills nav .active:hover {
+  text-decoration: none;
+  color: #495057;
+}
+
+#skills nav a {
+  font-size: 1.25em;
+}
+
+.skills-img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 120px;
+}
+
+.skills-img img {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#skills #nav-tabContent {
+  background: #fff;
+  width: 100%;
+  padding: 0 15px 10px 15px;
+}
+
+#skills figure {
+  height: 100px;
+  width: 100px;
+  margin: 10px auto 0 auto;
+}
+
+#skills figure img {
+  height: 80px;
+}
+
+#skills figure:hover {
+  text-decoration: none;
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+
+#skills p {
+  font-size: 1.15em;
+  text-align: center;
+}
+
+#skills a {
+  text-decoration: none;
+}
+
+#skills #nav-tabContent .row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#experience {
+  height: fit-content;
+  padding-bottom: 15pt;
+}
+
+#experience #tituloDiv {
+  height: fit-content;
+  width: 100%;
+  margin-top: 15pt;
+}
+
+#experience #tituloDiv h3 {
+  padding: 10px 0 10px 5px;
+  color: #0043BD;
+  text-shadow: 1px 1px 0 #000;
+}
+
+
+#experience .tituloExp,
+#experience .subtituloExp {
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+}
+
+#experience .tituloExp {
+  padding-top: 15pt;
+}
+
+#experience .subtituloExp {
+  margin-bottom: 12pt;
+}
+
+#experience .descripcionExp p,
+#experience .descripcionExp li {
+  font-size: 16px;
+}
+
+#experience figure,
+#sobre-mi #educacion figure {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #001F56;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
+}
+
+#experience figure img,
+#sobre-mi #educacion figure img {
+  height: 100%;
+  object-fit: contain;
+}
+
+#sobre-mi #educacion div p {
+  font-size: 1.05em;
+  text-shadow: -1px -1px 0 #000;
+}
+
+#sobre-mi #info-personal {
+  position: relative;
+  width: 100%;
+}
+
+#sobre-mi #info-personal figure {
+  width: 75%;
+  margin: 0px auto;
+}
+
+#sobre-mi #info-personal figure img {
+  width: 100%;
+  border-radius: 50%;
+  padding: 3px;
+  border: 5px solid #0043BD;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
+
+}
+
+#sobre-mi .carousel-caption {
+  padding-bottom: 5px;
+}
+
+#sobre-mi #hobbies {
+  position: relative;
+  width: 100%;
+}
+
+#sobre-mi #hobbies figure {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#sobre-mi #hobbies figure img {
+  width: 100%;
+}
+
+#sobre-mi #hobbies #nintendo {
+  height: 150px;
+  padding: 0;
+  background-image: url(assets/about-me/nintendo.png);
+  background-size: auto 100%;
+  animation: 300s infiniteScroll linear infinite;
+}
+
+#sobre-mi #hobbies figcaption,
+#sobre-mi #hobbies a {
+  text-align: center;
+  color: #000 !important;
+}
+
+#sobre-mi #hobbies a {
+  text-decoration: none;
+}
+
+#sobre-mi #hobbies #ntdn:hover,
+#sobre-mi #hobbies figure:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+#about-site {
+  display: relative;
+  width: 100%;
+}
+
+#about-site h2 {
+  padding-top: 30pt;
+  font-size: 1.98em;
+}
+
+.h3-title,
+#sobre-mi h4 {
+  font-size: 2.0em;
+  background-color: #0043BD;
+  color: #fff;
+  text-shadow: 1px 1px 0 #000;
+  margin-left: -15px;
+  margin-bottom: 15pt;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
+  padding: 15px
+}
+
+#sobre-mi {
+  padding-top: 30pt;
+}
+
+#about-site {
+  padding-bottom: 15pt;
+}
+
+#about-site p a {
+  color: #0043BD;
+  font-weight: bold
+}
+
+#about-site figure {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#about-site figure img {
+  width: 100%;
+}
+
+#about-site .colorRow {
+  padding: 0px 15px;
+}
+
+#about-site .colorDiv {
+  width: 20%;
+  height: 30px;
+  font-size: 0.75em;
+  text-align: center;
+  padding-top: 5px;
+  border: 1px solid #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
+}
+
+@media screen and (min-width: 480px) {
+  #contact_button {
+    width: 70px;
+    height: 70px;
+    right: 20px;
+  }
+
+  .fa-positioning {
+    margin-top: 18px;
+    font-size: 2.2em;
+  }
+
+  .bg-home #img-top,
+  .bg-home #img-bottom {
+    width: 65%;
+  }
+
+  #sobre-mi #info-personal figure {
+    width: 65%;
+  }
+
+}
+
+@media screen and (min-width: 576px) {
+
+  .h3-title,
+  #sobre-mi h4 {
+    margin-left: -30px;
+    text-align: center
+  }
+}
+
+@media screen and (min-width: 767px) {
+
+  #contact_button {
+    width: 80px;
+    height: 80px;
+    right: 30px;
+  }
+
+  .fa-positioning {
+    margin-top: 20px;
+    font-size: 2.5em;
+  }
+
+  .bg-home #img-top,
+  .bg-home #img-bottom {
+    width: 50%;
+  }
+
+  #sobre-mi #info-personal figure {
+    width: 45%;
+  }
+
+  #home-content #home-buttons {
+    display: inline-flex;
+    margin-top: 30pt;
+  }
+
+  #home-content #home-buttons .btn {
+    width: 45%;
+  }
+
+  #home-content #home-buttons a {
+    margin-top: 0;
+  }
+
+  #experience figure,
+  #sobre-mi #educacion figure {
+    height: 400px;
+  }
+
+  #info-personal,
+  #educacion,
+  #hobbies {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+
+  body {
+    background-color: white;
+  }
+
+  #sobre-mi #info-personal figure {
+    width: 75%;
+    left: 50%;
+    top: 50%;
+  }
+
+  #custom-container {
+    width: 76%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50pt;
+    background-color: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .5);
+  }
+
+  #home-content #home-buttons .btn {
+    width: 40%;
+  }
+
+  #skills figure {
+    height: 140px;
+    width: 140px;
+    margin: 30px auto 0 auto;
+  }
+
+  #skills figure img {
+    height: 120px;
+  }
+
+  #skills #nav-tabContent {
+    padding-bottom: 50px;
+  }
+
+  #sobre-mi p {
+    padding-top: 5pt;
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+  #sobre-mi #info-personal figure {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .desq-hin {
+    margin: 0 auto;
+  }
+
+  #experience figure,
+  #sobre-mi #educacion figure {
+    height: 450px;
+    width: 60%;
+  }
+
+}
+
+@media screen and (min-width: 1535px) {
+  #custom-container {
+    width: 70%;
+  }
+}
+
+/* Animaciones */
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fast {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes infiniteScroll {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -10000px 0;
+  }
+}
+
+
+
+@keyframes infiniteScrollV {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -10000px -10000px;
+  }
+}
+
+#contact_button:hover {
+  animation: 1s chicle 1;
+  transition-duration: 0.3s;
+}
+
+@keyframes chicle {
+  30% {
+    transform: scaleX(1.25) scaleY(0.75);
+  }
+
+  40% {
+    transform: scaleX(0.75) scaleY(1.25);
+  }
+
+  60% {
+    transform: scaleX(1.15) scaleY(0.85);
+  }
+}

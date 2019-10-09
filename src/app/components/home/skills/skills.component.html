@@ -1,0 +1,55 @@
+<div id="skills">
+  <div id="skills-mobile" class="container">
+    <h3>Habilidades técnicas y herramientas</h3>
+
+    <nav class="nav-fill">
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+          aria-controls="nav-home" aria-selected="true">Avanzado</a>
+        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+          aria-controls="nav-profile" aria-selected="false">Medio</a>
+        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+          aria-controls="nav-contact" aria-selected="false">Básico</a>
+      </div>
+    </nav>
+
+    <div class="tab-content mt-2" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <div class="row">
+          <div class="animated fadeIn col-4 col-md-3" *ngFor="let skill of consService.advancedSkills">
+            <a [href]="skill.link" target="_blank">
+              <figure class="skills-img">
+                <img [src]="skill.img" alt="">
+                <p>{{skill.nombre}}</p>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="row w-">
+          <div class="animated fadeIn col-4 col-md-3" *ngFor="let skill of consService.mediumkills">
+            <a [href]="skill.link" target="_blank">
+              <figure class="skills-img">
+                <img [src]="skill.img" alt="">
+                <p>{{skill.nombre}}</p>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+        <div class="row">
+          <div class="animated fadeIn col-4 col-md-3" *ngFor="let skill of consService.basicSkills">
+            <a [href]="skill.link" target="_blank">
+              <figure class="skills-img">
+                <img [src]="skill.img" alt="">
+                <p>{{skill.nombre}}</p>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
