@@ -37,6 +37,11 @@ export class ConsServiceService {
       link: 'https://ionicframework.com'
     },
     {
+      nombre: 'Materialize',
+      img: 'assets/icons/materialize.svg',
+      link: 'https://materializecss.com'
+    },
+    {
       nombre: 'SQL',
       img: 'assets/icons/sql.svg',
       link: 'https://en.wikipedia.org/wiki/SQL'

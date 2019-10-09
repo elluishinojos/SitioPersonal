@@ -1,6 +1,6 @@
 <div id="skills">
-  <h3>Habilidades técnicas y herramientas</h3>
   <div id="skills-mobile" class="container">
+    <h3>Habilidades técnicas y herramientas</h3>
 
     <nav class="nav-fill">
       <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -16,8 +16,7 @@
     <div class="tab-content mt-2" id="nav-tabContent">
       <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
         <div class="row">
-          <div class="animated fadeIn col-4 col-md-3"
-            *ngFor="let skill of consService.advancedSkills">
+          <div class="animated fadeIn col-4 col-md-3" *ngFor="let skill of consService.advancedSkills">
             <a [href]="skill.link" target="_blank">
               <figure class="skills-img">
                 <img [src]="skill.img" alt="">
@@ -28,7 +27,7 @@
         </div>
       </div>
       <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-        <div class="row">
+        <div class="row w-">
           <div class="animated fadeIn col-4 col-md-3" *ngFor="let skill of consService.mediumkills">
             <a [href]="skill.link" target="_blank">
               <figure class="skills-img">

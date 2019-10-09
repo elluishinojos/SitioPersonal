@@ -8,8 +8,8 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <ul class="navbar-nav justify-content-end">
       <li class="nav-item" routerLinkActive="active" data-toggle="collapse" data-target=".navbar-collapse.show">
         <a class="nav-link" [routerLink]="['home']">Página principal</a>
       </li>
@@ -58,7 +58,7 @@
       <div class="form-group">
         <label for="messageImput">Mensaje</label>
         <textarea required [(ngModel)]="mensaje.cuerpo" name="cuerpo" class="form-control" id="messageImput" rows="2"
-          placeholder="Mensaje"></textarea>
+          placeholder="¡Aquí deposita tus comentarios, quejas, sugerencias o saludos!"></textarea>
       </div>
       <div class="modal-footer form-group animated fadeIn">
         <button type="button" class="btn btn-outline-danger" (click)="modal.close()">
